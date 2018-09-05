@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaDemoCode.iml" filepath="$PROJECT_DIR$/JavaDemoCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMVC案例/SpringMVC案例.iml" filepath="$PROJECT_DIR$/SpringMVC案例/SpringMVC案例.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String案例/String案例.iml" filepath="$PROJECT_DIR$/String案例/String案例.iml" />
     </modules>
   </component>
 </project>

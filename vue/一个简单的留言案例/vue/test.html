@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./src/vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<input type="text" v-model='msg'>
+	<button type="button" @click='sendhandle'>留言</button>
+	<br>
+	<ul>
+		
+		<li v-for='item in list'>{{item.title}}</li>
+	</ul>
+	
+</div>
+	<script>
+		let list = [{id:11,title:'阿西吧'},
+					{id:22,title:'死啦死啦'}]
+		new Vue({
+			el: '#app',
+			data: {
+				msg:'',
+				list			
+
+			},
+			methods:{
+				
+				sendhandle(){
+					this.list.push({
+						id:Date.now(),
+						title:this.msg
+					})
+					this.msg = '';
+				}
+
+			}
+		})
+	</script>
+</body>
+</html>
